@@ -51,7 +51,7 @@ func main() {
 		flush()
 		d, a, pc, kbd := comp.GetRegs()
 		ins := comp.GetIns()
-		fmt.Printf("D: %04x, A: %04x, PC: %04x\nROM[%04x]: %016b\nKBD: %04x", d, a, pc, pc, ins, kbd)
+		fmt.Printf("D: %04x, A: %04x, PC: %04x\nROM[%04x]: %016b\nKBD: %04x\n", d, a, pc, pc, ins, kbd)
 		sdl.Delay(delay)
 	}
 	outVals := comp.GetValues(outAddrs)
