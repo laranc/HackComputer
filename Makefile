@@ -1,4 +1,4 @@
-SCRIPT = ""
+SCRIPT = 
 
 default:
 	go build -o ./build/HackComputer ./cmd/. 
